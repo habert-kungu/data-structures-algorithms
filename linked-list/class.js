@@ -1,48 +1,29 @@
 class Node {
-  constructor(data) {
-    this.data = data;
+  constructor(value) {
+    this.value = value;
     this.next = null;
   }
 }
-class linkedList {
-  constructor() {
-    this.head = null;
-    this.size = 0;
-  }
-  append(data) {
-    const newNode = new Node(data);
-    if (!this.head) {
-      this.head = newNode;
-    } else {
-      let current = this.head;
-      while (current.next) {
-        current = current.next;
-      }
-      current.next = newNode;
-    }
-    this.size++;
-  }
-  insertAt(data, index) {
-    if (index < 0 || index > this.size) {
-      return false;
-    }
-    const newNode = new Node(data);
-    if (index === 0) {
-      newNode.next = this.head;
-      this.head = newNode;
-    } else {
-      let current = this.head;
-      let previous;
-      let i = 0;
+const a = new Node("A");
+const b = new Node("B");
+const c = new Node("C");
+const d = new Node("D");
 
-      while (i < index) {
-        previous = current;
-        current = current.next;
-        i++;
-      }
-      newNode.next = current;
-      previous.next = newNode;
-    }
-    this.size++;
-  }
-}
+a.next = b;
+b.next = c;
+c.next = d;
+//
+// const printLinkedList = (head) => {
+//   let current = head;
+//   while (current !== null) {
+//     console.log(current.value);
+//     current = current.next;
+//   }
+// };
+const printLinkedList = (head) => {
+  let val = [];
+  if (head === null) return;
+  val.push(head);
+  console.log(printLinkedList(head.next));
+};
+printLinkedList(a);

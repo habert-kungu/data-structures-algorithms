@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="kjen">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title></title>
+    <link href="css/style.css" rel="stylesheet" />
+    <style>
+      body {
+      }
+    </style>
+  </head>
+  <body>
+    <h1>TD</h1>
+    <div class="container">
+      <input id="inputField " type="text" />
+      <button type="submit" id="addTask">add task</button>
+      <button id="deleteTask ">delete task</button>
+      <div class="to-do" id="toDoContainer "></div>
+    </div>
+  </body>
+  <script>
+    let addTask = document.getElementById("addTask");
+    let deleteTask = document.getElementById("deleteTask");
+    let toDoContainer = document.getElementById("toDoContainer");
+    let inputField = document.getElementById("inputField");
+
+    addTask.addEventListener("click", function () {
+      var paragraph = document.createElement("p");
+      paragraph.innerText = inputField.value;
+      toDoContainer.appendChild(paragraph);
+      input.value = "";
+    });
+  </script>
+</html>
