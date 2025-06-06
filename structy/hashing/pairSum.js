@@ -1,3 +1,8 @@
+// Algorithm Description:
+// The 'pairSum' function finds two indices in an array whose values sum to a target sum.
+// It uses a hash map to store previously seen numbers for efficient lookup.
+// This implementation has a time complexity of O(n), making it more efficient than the nested loops approach.
+
 // ising a obj make it fast
 const pairSum = (numbers, targetSum) => {
   const previousNums = {};

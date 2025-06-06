@@ -1,3 +1,9 @@
+// Algorithm Description:
+// The 'anagrams' function checks if two strings are anagrams of each other.
+// It counts the frequency of each character in the first string, then decrements
+// the count for each character found in the second string. If all counts return to zero
+// and no extra characters are found, the strings are anagrams.
+
 const anagrams = (s1, s2) => {
   let count = {};
   for (let char of s1) {
