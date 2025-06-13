@@ -54,3 +54,7 @@ y.next = z;
 
 zipperLists(a, x);
 // a -> x -> b -> y -> c -> z -> d -> e -> f
+
+// Algorithm Description:
+// The 'zipperLists' function zippers two linked lists together by alternating nodes from each list.
+// It is implemented recursively and can also be done iteratively.

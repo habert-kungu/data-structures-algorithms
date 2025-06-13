@@ -1,3 +1,7 @@
+// Algorithm Description:
+// Defines a singly linked list node and demonstrates both iterative and recursive traversal of the list.
+// The Node class represents each element, and printLinkedList prints all values in order.
+
 class Node {
   constructor(val) {
     this.val = val;

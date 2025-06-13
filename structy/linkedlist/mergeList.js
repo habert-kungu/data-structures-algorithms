@@ -58,3 +58,8 @@ s.next = t;
 
 mergeLists(a, q);
 // 1 -> 5 -> 7 -> 8 -> 9 -> 10 -> 10 -> 12 -> 20 -> 28
+
+// Algorithm Description:
+// The 'mergeLists' function merges two sorted linked lists into one sorted list.
+// It uses recursion (and optionally iteration) to combine nodes in order.
+// The base cases handle null lists, and the recursive cases merge nodes by comparing values.

@@ -1,3 +1,9 @@
+// Algorithm Description:
+// The 'isUnivalueList' function checks if all nodes in a linked list have the same value.
+// It iterates through the list and compares each value to the first.
+// If it finds a different value, it returns false.
+// If it reaches the end of the list without finding a difference, it returns true.
+
 const isUnivalueList = (head) => {
   let current = head;
   while (current !== null) {

@@ -1,3 +1,7 @@
+// Algorithm Description:
+// The 'removeNode' function removes the first node with a given value from a linked list.
+// It is implemented recursively and can also be done iteratively.
+
 const removeNode = (head, targetVal) => {
   if (head === null) return null;
   if (head.val === targetVal) return head.next;

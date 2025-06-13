@@ -1,3 +1,7 @@
+// Algorithm Description:
+// The 'linkedListValues' function collects all values from a linked list into an array.
+// It uses recursion to traverse the list and accumulate values.
+
 // // iterative approach
 // const linkedListValues = (head) => {
 //   let current = head;

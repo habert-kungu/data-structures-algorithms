@@ -1,3 +1,7 @@
+// Algorithm Description:
+// The 'getNodeValue' function retrieves the value at a specific index in a linked list.
+// It is implemented recursively and can also be done iteratively.
+
 const getNodeValue = (head, index) => {
   if (head === null) return null;
   if (index === 0) return head.val;

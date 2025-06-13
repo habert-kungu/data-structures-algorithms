@@ -1,10 +1,7 @@
-const reverseList = (head, prev = null) => {
-  if (head === null) return prev;
-  const next = head.next;
-  head.next = prev;
+// Algorithm Description:
+// The 'reverseList' function reverses a linked list.
+// It is implemented recursively and can also be done iteratively.
 
-  return reverseList(next, head);
-};
 // const reverseList = (head) => {
 //   let current = head;
 //   let prev = null;

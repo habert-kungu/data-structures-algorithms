@@ -1,3 +1,7 @@
+// Algorithm Description:
+// The 'insertNode' function inserts a new node with a given value at a specified index in a linked list.
+// It handles insertion at the head and traverses the list to insert elsewhere.
+
 const insertNode = (head, value, index) => {
   let current = head;
   let count = 0;

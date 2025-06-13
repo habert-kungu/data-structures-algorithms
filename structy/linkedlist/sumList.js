@@ -1,3 +1,7 @@
+// Algorithm Description:
+// The 'sumList' function sums all values in a linked list.
+// It is implemented recursively and can also be done iteratively.
+
 const sumList = (head) => {
   if (head === null) return 0;
   return head.val + sumList(head.next);
