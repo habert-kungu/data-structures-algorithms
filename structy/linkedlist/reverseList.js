@@ -6,6 +6,7 @@
 //   let current = head;
 //   let prev = null;
 //   while (current !== null) {
+//   keeptrack of the next node
 //     const next = current.next;
 //     current.next = prev;
 //     prev = current;
