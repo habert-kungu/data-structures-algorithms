@@ -6,15 +6,8 @@ class Node {
   }
 }
 
-const breadthFirstValues = (root) => {
-  if (root === null) return [];
-  let queue = [root];
-  while (queue.length > 0) {
-    let current = queue.shift();
-    console.log(current.val);
-    if (current.left !== null) queue.push(current.left);
-    if (current.right !== null) queue.push(current.right);
-  }
+const treeIncludes = (root, target) => {
+  // todo
 };
 const a = new Node("a");
 const b = new Node("b");
@@ -35,5 +28,4 @@ c.right = f;
 //  / \     \
 // d   e     f
 
-breadthFirstValues(a);
-//    -> ['a', 'b', 'c', 'd', 'e', 'f']
+treeIncludes(a, "a"); // -> true
