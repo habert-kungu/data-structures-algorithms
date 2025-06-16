@@ -7,8 +7,22 @@ class Node {
 }
 
 const treeIncludes = (root, target) => {
-  // todo
+  if (root === null) return false;
+  if (root.val === target) return true;
+  return treeIncludes(root.left, target) || treeIncludes(root.right, target);
 };
+// // this is the iterative bfs sol
+// const treeIncludes = (root, target) => {
+//   if (root === null) return false;
+//   let queue = [root];
+//   while (queue.length > 0) {
+//     const current = queue.shift();
+//     if (current.val === target) return true;
+//     if (current.left !== null) queue.push(current.left);
+//     if (current.right !== null) queue.push(current.right);
+//   }
+//   return false;
+// };
 const a = new Node("a");
 const b = new Node("b");
 const c = new Node("c");
