@@ -6,14 +6,24 @@ class Node {
   }
 }
 const depthFirstValues = (root) => {
-  let stack = [root];
-  while (stack.length > 0) {
-    const current = stack.pop();
-    console.log(current.val);
-    if (current.right) stack.push(current.right);
-    if (current.left) stack.push(current.left);
-  }
+  if (root.val === null) return [];
+  const rightVal = depthFirstValues(root.right);
+  const leftVal = depthFirstValues(root.left);
+  return [root.val, ...leftVal, ...rightVal];
 };
+// // this is this th iterative sol
+// const depthFirstValues = (root) => {
+//   if (root === null) return [];
+//   let stack = [root];
+//   let values = [];
+//   while (stack.length > 0) {
+//     const current = stack.pop();
+//     values.push(current.val);
+//     if (current.right !== null) stack.push(current.right);
+//     if (current.left !== null) stack.push(current.left);
+//   }
+//   return values;
+// };
 const a = new Node("a");
 const b = new Node("b");
 const c = new Node("c");
