@@ -7,7 +7,10 @@ class Node {
 }
 
 const howHigh = (node) => {
-  // todo
+  if (node === null) return -1;
+  const leftTreePath = howHigh(node.left);
+  const rightTreePath = howHigh(node.right);
+  return 1 + Math.max(leftTreePath, rightTreePath);
 };
 const a = new Node("a");
 const b = new Node("b");
