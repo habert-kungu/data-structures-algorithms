@@ -16,3 +16,8 @@ const treeLevels = (root) => {
   }
   return levels;
 };
+//   ['a'],
+//   ['b', 'c'],
+//   ['d', 'e', 'f'],
+//   ['g', 'h', 'i']
+// ];
