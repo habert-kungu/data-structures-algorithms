@@ -8,6 +8,7 @@ const levelAvarage  = (root)=>{
        level[levelNum] = [node.val]
     }else{
   for(char of level){
+        const avarage = char / level[levelNum] 
 
   }
       level[levelNum].push(node.val)
