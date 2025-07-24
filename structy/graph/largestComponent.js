@@ -1,6 +1,22 @@
 const largestComponent = (graph) => {
-  // todo
+  let largest = 0;
+  const visited = new Set();
+  for (let node in graph) {
+    const size = explore(graph, node, visited);
+    if (size > largest) largest = size;
+  }
+  return largest;
 };
+const explore = (graph, node, visited) => {
+  if (visited.has(String(node))) return 0;
+  visited.add(String(node));
+  let size = 1;
+  for (let neighbours of graph[node]) {
+    size += explore(graph, neighbours, visited);
+  }
+  return size;
+};
+
 largestComponent({
   0: ["8", "1", "5"],
   1: ["0"],
