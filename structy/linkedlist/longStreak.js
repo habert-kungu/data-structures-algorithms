@@ -12,6 +12,8 @@ const longestStreak = (head) => {
   let maxStreak = 0;
   let currentStreak = 0;
   let prevVal = null;
+  //null ->  5 -> 5 -> 7 -> 7 -> 7 -> 6
+  //prevVal
   while (currentNode !== null) {
     if (currentNode === prevVal) {
       currentStreak += 1;

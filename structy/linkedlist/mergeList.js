@@ -15,7 +15,7 @@ const mergeLists = (head1, head2) => {
 
 // this is the iterative version
 // const mergeLists = (head1, head2) => {
-//   const dummyHead = new Node(null);
+//   const  dummyHead = new Node(null);
 //   let tail = dummyHead;
 //   current1 = head1;
 //   current2 = head2;
