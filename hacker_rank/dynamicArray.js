@@ -1,1 +1,0 @@
-function dynamicArray(n, queries) {}
